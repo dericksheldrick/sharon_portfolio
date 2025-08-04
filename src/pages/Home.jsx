@@ -8,14 +8,6 @@ export default function Home() {
       id="home"
       className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-blue-100 to-white px-6"
     >
-      <motion.img
-        src="/profile-photo.jpg" 
-        alt="Sharon Kosgei"
-        className="w-40 h-40 rounded-full border-4 border-blue-600 shadow-lg mb-8 object-cover"
-        initial={{ opacity: 0, scale: 0.8 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 1 }}
-      />
 
       <motion.h1
         className="text-5xl font-bold text-blue-700 mb-4 text-center"

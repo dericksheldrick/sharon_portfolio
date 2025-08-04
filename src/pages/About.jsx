@@ -12,7 +12,7 @@ const cardVariants = {
 
 export default function About() {
   return (
-    <section id="about" className="py-20 px-6 bg-white max-w-5xl mx-auto">
+    <section id="about" className="py-8 px-6 bg-white  mx-auto">
       <h2 className="text-4xl font-bold text-blue-600 mb-12 text-center">About Me</h2>
 
       <motion.div

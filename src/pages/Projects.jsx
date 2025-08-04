@@ -24,12 +24,13 @@ export default function Projects() {
       tech: ["React", "Flask", "REST API"],
       link: "https://github.com/jebesharon/securevision",
       image: "/projects/securevision.png",
+      demo: "https://smartfarm-demo.vercel.app",
     }
   ];
 
   return (
     <section id="projects" className="py-20 px-6 bg-white">
-      <div className="max-w-6xl mx-auto text-center">
+      <div className=" mx-auto text-center">
         <h2 className="text-4xl font-bold text-blue-600 mb-6">Projects</h2>
         <p className="text-slate-600 mb-12">Here are some of the projects I've built recently.</p>
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -45,25 +46,17 @@ export default function Projects() {
               />
               <h3 className="text-2xl font-semibold text-slate-800 mb-2">{project.title}</h3>
               <p className="text-slate-600 mb-4 flex-grow">{project.description}</p>
-              <div className="flex flex-wrap gap-2 mb-4">
+              <div className="flex flex-wrap gap-2 mb-4 justify-center align-middle">
                 {project.tech.map((tech, idx) => (
                   <span 
                     key={idx} 
-                    className="bg-blue-100 text-blue-700 px-2 py-1 text-sm rounded"
+                    className="bg-blue-100 text-blue-700 px-2 py-1 text-sm rounded "
                   >
                     {tech}
                   </span>
                 ))}
               </div>
               <div className="flex gap-4 mt-auto justify-center">
-                <a
-                  href={project.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block bg-blue-600 text-white px-5 py-2 rounded hover:bg-blue-700 transition text-center font-semibold"
-                >
-                  View Code
-                </a>
                 
                 {project.demo && (
                   <a
